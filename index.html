@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatArchive Chrome Extension — Privacy Policy</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0a0a0f; color: #e0e0e8; line-height: 1.7; padding: 40px 20px; }
+.container { max-width: 760px; margin: 0 auto; }
+h1 { font-size: 28px; margin-bottom: 8px; color: #fff; }
+h2 { font-size: 20px; margin: 32px 0 12px; color: #a78bfa; }
+p { margin-bottom: 16px; color: #b0b0c0; }
+.updated { color: #888; font-size: 14px; margin-bottom: 32px; }
+ul { margin: 0 0 16px 24px; color: #b0b0c0; }
+li { margin-bottom: 8px; }
+strong { color: #e0e0e8; }
+a { color: #a78bfa; }
+.highlight { background: rgba(167,139,250,0.1); border-left: 3px solid #a78bfa; padding: 16px; border-radius: 8px; margin: 20px 0; }
+code { color: #d8b4fe; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>ChatArchive — Privacy Policy</h1>
+<p class="updated">Last updated: October 5, 2026</p>
+
+<div class="highlight">
+<strong>Summary:</strong> ChatArchive handles conversations you explicitly save and keeps them in Chrome's local extension storage. The developer does not receive your saved chats. ChatArchive has no account, ad tracker, analytics SDK, or chat-storage server.
+</div>
+
+<h2>What ChatArchive does</h2>
+<p>ChatArchive lets you save, search, organize, back up, restore, export, and reuse AI conversations from ChatGPT, Claude, Google Gemini, and the Gemini Notebook beta (formerly NotebookLM).</p>
+
+<h2>Data handled locally</h2>
+<p>When you click the floating save button or the “Save to ChatArchive” context-menu command, the extension reads the currently open supported conversation and stores:</p>
+<ul>
+<li>conversation title and visible message text;</li>
+<li>whether each captured message is from you or the AI assistant;</li>
+<li>the supported AI provider and normalized source-conversation URL;</li>
+<li>timestamps, message count, folders, tags, and starred status you use in ChatArchive.</li>
+</ul>
+<p>This includes data Chrome classifies as <strong>personal communications</strong>, <strong>website content</strong>, and <strong>web history</strong> because the saved record includes the source-conversation URL. Saving is manual; ChatArchive does not continuously capture chats in the background.</p>
+<p>Gemini Notebook access is optional and requested only after you choose to enable it. The beta reads visible questions and completed assistant answers on the open notebook page. It does not capture notebook sources, source files, Studio artifacts, audio overviews, images, or other generated artifacts. Inline citation markers that are visible inside an answer may remain part of that saved answer.</p>
+
+<h2>Storage and security</h2>
+<p>Saved conversations are stored on the current device in <code>chrome.storage.local</code>. ChatArchive does not upload them to an ArkLabs or ChatArchive server and does not sell or share them for advertising.</p>
+<p>ChatArchive does not add application-level encryption to Chrome's local store. Access is governed by the security of your Chrome profile, device, operating-system account, backups, and any files you choose to export. Do not use a shared or compromised Chrome profile for confidential material.</p>
+
+<h2>Backups, exports, and deletion</h2>
+<p>Files are created only when you choose an export or backup action. You control where those files are saved and shared. A restore reads the file you select locally and merges missing conversations without sending it to the developer.</p>
+<p>You can delete individual conversations in the extension. Removing ChatArchive clears its local Chrome extension storage. For that reason, download a safety backup before uninstalling, changing browser profiles, or installing the extension under a different ID.</p>
+
+<h2>Optional feedback</h2>
+<p>The feedback box saves an unfinished draft in Chrome's session storage. Nothing is sent until you press <strong>Send</strong>. You may optionally enter a reply email address; leaving it blank sends feedback anonymously.</p>
+<p>Direct submission goes to a Google Apps Script receiver operated by the developer and is stored in the developer's private Google Sheet. The request is limited to a schema version, a fixed feedback classification, feedback text, extension version, an optional reply email you enter, submission time, a blank anti-spam honeypot, and a receiver token. Google processes the request under its applicable terms. The optional reply email is the only user-identifying field requested by the form. Direct feedback never includes a saved conversation, archive contents, chat title, provider site, source URL, search query, exported file, or page DOM. Do not paste conversation content, credentials, or other secrets into the feedback text itself.</p>
+<p>The receiver validates allowed values and lengths, rejects a filled honeypot, escapes spreadsheet-formula prefixes, and caps accepted submissions per hour and per day. These controls reduce automated spam but cannot guarantee that a public feedback form will receive none.</p>
+<p>Feedback is used to answer support requests and improve ChatArchive. It is not sold or used for targeted advertising. You may request deletion of feedback you sent by contacting the address below.</p>
+
+<h2>Analytics and tracking</h2>
+<p>ChatArchive does not contain product analytics, advertising identifiers, tracking pixels, or third-party analytics SDKs. The Chrome Web Store may provide its own aggregated listing and installation metrics under Google's policies.</p>
+
+<h2>Third-party AI services</h2>
+<p>ChatArchive runs on supported pages provided by OpenAI, Anthropic, and Google so it can perform the user-requested capture. Gemini Notebook pages are accessed only after optional host permission is granted. Those services continue to operate under their own terms and privacy policies. ChatArchive is independent and is not affiliated with or endorsed by them.</p>
+
+<h2>Limited use</h2>
+<p>Information handled from supported pages is used only to provide and improve ChatArchive's disclosed, user-facing archive and continuity features. It is not transferred for personalized advertising, sold to data brokers, used to determine creditworthiness, or made available for unrelated human review.</p>
+
+<h2>Children's privacy</h2>
+<p>ChatArchive is not directed to children under 13, and the developer does not knowingly collect children's personal information.</p>
+
+<h2>Changes</h2>
+<p>If ChatArchive's data practices change—for example, if optional diagnostics or cloud sync is introduced—this policy, the Chrome Web Store disclosures, and any required in-product consent will be updated before that feature is released.</p>
+
+<h2>Contact</h2>
+<p>Questions, support, and deletion requests: <a href="mailto:avndeshpande@gmail.com">avndeshpande@gmail.com</a></p>
+
+<p style="margin-top: 48px; color: #666; font-size: 13px;">© 2026 ArkLabs.</p>
+</div>
+</body>
+</html>
